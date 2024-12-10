@@ -1,0 +1,378 @@
+@inproceedings{beckersDataDrivenBayesianControl2023a,
+  title = {Data-{{Driven Bayesian Control}} of {{Port-Hamiltonian Systems}}},
+  booktitle = {2023 62nd {{IEEE Conference}} on {{Decision}} and {{Control}} ({{CDC}})},
+  author = {Beckers, Thomas},
+  year = {2023},
+  month = dec,
+  pages = {8708--8713},
+  issn = {2576-2370},
+  doi = {10.1109/CDC49753.2023.10384219},
+  urldate = {2024-12-09},
+  abstract = {Port-Hamiltonian theory is an established way to describe nonlinear physical systems widely used in various fields such as robotics, energy management, and mechanical engineering. This has led to considerable research interest in the control of Port-Hamiltonian systems, resulting in numerous model-based control techniques. However, the performance and stability of the closed-loop typically depend on the quality of the PH model, which is often difficult to obtain using first principles. We propose a Gaussian Processes (GP) based control approach for Port-Hamiltonian systems (GPC-PHS) by leveraging gathered data. The Bayesian characteristics of GPs enable the creation of a distribution encompassing all potential Hamiltonians instead of providing a singular point estimate. Using this uncertainty quantification, the proposed approach takes advantage of passivity-based robust control with interconnection and damping assignment to establish probabilistic stability guarantees.},
+  keywords = {Bayes methods,Control systems,Gaussian processes,Probabilistic logic,Robust control,Stability analysis,Uncertainty},
+  file = {C:\Users\th831789\Zotero\storage\HNM7YT3P\Beckers - 2023 - Data-Driven Bayesian Control of Port-Hamiltonian Systems.pdf}
+}
+
+@inproceedings{beckersGaussianProcessPortHamiltonian2022,
+  title = {Gaussian {{Process Port-Hamiltonian Systems}}: {{Bayesian Learning}} with {{Physics Prior}}},
+  shorttitle = {Gaussian {{Process Port-Hamiltonian Systems}}},
+  booktitle = {2022 {{IEEE}} 61st {{Conference}} on {{Decision}} and {{Control}} ({{CDC}})},
+  author = {Beckers, Thomas and Seidman, Jacob and Perdikaris, Paris and Pappas, George J.},
+  year = {2022},
+  month = dec,
+  pages = {1447--1453},
+  issn = {2576-2370},
+  doi = {10.1109/CDC51059.2022.9992733},
+  urldate = {2024-11-29},
+  abstract = {Data-driven approaches achieve remarkable results for the modeling of complex dynamics based on collected data. However, these models often neglect basic physical principles which determine the behavior of any real-world system. This omission is unfavorable in two ways: The models are not as data-efficient as they could be by incorporating physical prior knowledge, and the model itself might not be physically correct. We propose Gaussian Process Port-Hamiltonian systems (GPPHS) as a physics-informed Bayesian learning approach with uncertainty quantification. The Bayesian nature of GP-PHS uses collected data to form a distribution over all possible Hamiltonians instead of a single point estimate. Due to the underlying physics model, a GP-PHS generates passive systems with respect to designated inputs and outputs. Further, the proposed approach preserves the compositional nature of Port-Hamiltonian systems.},
+  keywords = {Bayes methods,Behavioral sciences,Data models,Gaussian processes,Kernel,Probabilistic logic,Uncertainty},
+  file = {C\:\\Users\\th831789\\Zotero\\storage\\MVC2MCN2\\Beckers et al. - 2022 - Gaussian Process Port-Hamiltonian Systems Bayesian Learning with Physics Prior.pdf;C\:\\Users\\th831789\\Zotero\\storage\\YNK7KJ8N\\9992733.html}
+}
+
+@article{beckersLearningSwitchingPortHamiltonian2023,
+  title = {Learning {{Switching Port-Hamiltonian Systems}} with {{Uncertainty Quantification}}},
+  author = {Beckers, Thomas and Jiahao, Tom Z. and Pappas, George J.},
+  year = {2023},
+  month = jan,
+  journal = {IFAC-PapersOnLine},
+  series = {22nd {{IFAC World Congress}}},
+  volume = {56},
+  number = {2},
+  pages = {525--532},
+  issn = {2405-8963},
+  doi = {10.1016/j.ifacol.2023.10.1621},
+  urldate = {2024-12-05},
+  abstract = {Switching physical systems are ubiquitous in modern control applications, for instance, locomotion behavior of robots and animals, power converters with switches and diodes. The dynamics and switching conditions are often hard to obtain or even inaccessible in case of a-priori unknown environments and nonlinear components. Black-box neural networks can learn to approximately represent switching dynamics, but typically require a large amount of data, neglect the underlying axioms of physics, and lack of uncertainty quantification. We propose a Gaussian process based learning approach enhanced by switching Port-Hamiltonian systems (GP-SPHS) to learn physical plausible system dynamics and identify the switching condition. The Bayesian nature of Gaussian processes uses collected data to form a distribution over all possible switching policies and dynamics that allows for uncertainty quantification. Furthermore, the proposed approach preserves the compositional nature of Port-Hamiltonian systems. A simulation with a hopping robot validates the effectiveness of the proposed approach.},
+  keywords = {Bayesian methods,Grey box modelling,Mechatronic systems,Nonparametric methods,Uncertainty quantification}
+}
+
+@article{bertalanLearningHamiltonianSystems2019,
+  title = {On Learning {{Hamiltonian}} Systems from Data},
+  author = {Bertalan, Tom and Dietrich, Felix and Mezi{\'c}, Igor and Kevrekidis, Ioannis G.},
+  year = {2019},
+  month = dec,
+  journal = {Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  volume = {29},
+  number = {12},
+  pages = {121107},
+  issn = {1054-1500},
+  doi = {10.1063/1.5128231},
+  urldate = {2024-12-10},
+  abstract = {Concise, accurate descriptions of physical systems through their conserved quantities abound in the natural sciences. In data science, however, current research often focuses on regression problems, without routinely incorporating additional assumptions about the system that generated the data. Here, we propose to explore a particular type of underlying structure in the data: Hamiltonian systems, where an ``energy'' is conserved. Given a collection of observations of such a Hamiltonian system over time, we extract phase space coordinates and a Hamiltonian function of them that acts as the generator of the system dynamics. The approach employs an autoencoder neural network component to estimate the transformation from observations to the phase space of a Hamiltonian system. An additional neural network component is used to approximate the Hamiltonian function on this constructed space, and the two components are trained jointly. As an alternative approach, we also demonstrate the use of Gaussian processes for the estimation of such a Hamiltonian. After two illustrative examples, we extract an underlying phase space as well as the generating Hamiltonian from a collection of movies of a pendulum. The approach is fully data-driven and does not assume a particular form of the Hamiltonian function.},
+  file = {C:\Users\th831789\Zotero\storage\44Z2J9WR\Bertalan et al. - 2019 - On learning Hamiltonian systems from data.pdf}
+}
+
+@article{cherifiOverviewRecentMachine2020,
+  title = {An Overview on Recent Machine Learning Techniques for {{Port Hamiltonian}} Systems},
+  author = {Cherifi, Karim},
+  year = {2020},
+  month = oct,
+  journal = {Physica D: Nonlinear Phenomena},
+  volume = {411},
+  pages = {132620},
+  issn = {0167-2789},
+  doi = {10.1016/j.physd.2020.132620},
+  urldate = {2024-12-05},
+  abstract = {Port Hamiltonian systems have grown in interest in recent years due to their modular property, close relation with physical modelling and the interesting properties arising from that. In this paper, we aim at providing an overview of the application of machine learning for port Hamiltonian systems in terms of modelling and control. After an introduction to Port Hamiltonian systems framework, recent results on Hamiltonian systems modelling are presented. Some results on minimal realization and model reduction are then overviewed. Finally, the most important results on the control of Port Hamiltonian systems based machine learning are discussed including adaptive control, iterative control and reinforcement learning. The results presented in this paper are a motivation for the potential of applying machine learning methods to dynamical systems in general and port Hamiltonian systems in particular.},
+  keywords = {Control theory,Dynamical systems,Machine learning,Physical modelling,Port Hamiltonian systems}
+}
+
+@misc{DataDrivenBayesianControl,
+  title = {Data-{{Driven Bayesian Control}} of {{Port-Hamiltonian Systems}} {\textbar} {{IEEE Conference Publication}} {\textbar} {{IEEE Xplore}}},
+  urldate = {2024-12-05},
+  howpublished = {https://ieeexplore.ieee.org/abstract/document/10384219}
+}
+
+@article{desaiPortHamiltonianNeuralNetworks2021,
+  title = {Port-{{Hamiltonian}} Neural Networks for Learning Explicit Time-Dependent Dynamical Systems},
+  author = {Desai, Shaan A. and Mattheakis, Marios and Sondak, David and Protopapas, Pavlos and Roberts, Stephen J.},
+  year = {2021},
+  month = sep,
+  journal = {Physical Review E},
+  volume = {104},
+  number = {3},
+  pages = {034312},
+  issn = {2470-0045, 2470-0053},
+  doi = {10.1103/PhysRevE.104.034312},
+  urldate = {2024-12-06},
+  langid = {english}
+}
+
+@article{duongPortHamiltonianNeuralODE2024,
+  title = {Port-{{Hamiltonian Neural ODE Networks}} on {{Lie Groups}} for {{Robot Dynamics Learning}} and {{Control}}},
+  author = {Duong, Thai and Altawaitan, Abdullah and Stanley, Jason and Atanasov, Nikolay},
+  year = {2024},
+  journal = {IEEE Transactions on Robotics},
+  volume = {40},
+  pages = {3695--3715},
+  issn = {1941-0468},
+  doi = {10.1109/TRO.2024.3428433},
+  urldate = {2024-12-05},
+  abstract = {Accurate models of robot dynamics are critical for safe and stable control and generalization to novel operational conditions. Hand-designed models, however, may be insufficiently accurate, even after careful parameter tuning. This motivates the use of machine learning techniques to approximate the robot dynamics over a training set of state-control trajectories. The dynamics of many robots are described in terms of their generalized coordinates on a matrix Lie group, e.g., on {\textbackslash}textSE(3) for ground, aerial, and underwater vehicles, and generalized velocity, and satisfy conservation of energy principles. This article proposes a port-Hamiltonian formulation over a Lie group of the structure of a neural ordinary differential equation (ODE) network to approximate the robot dynamics. In contrast to a black-box ODE network, our formulation embeds energy conservation principle and Lie group's constraints in the dynamics model and explicitly accounts for energy-dissipation effect such as friction and drag forces in the dynamics model. We develop energy shaping and damping injection control for the learned, potentially under-actuated Hamiltonian dynamics to enable a unified approach for stabilization and trajectory tracking with various robot platforms.},
+  keywords = {\textSE(3) manifold,dynamics learning,Hamiltonian dynamics,Lie groups,Mathematical models,Neural networks,neural ordinary differential equation (ODE) networks,Robot kinematics,Robots,Trajectory,Vehicle dynamics}
+}
+
+@misc{eidnesPseudoHamiltonianNeuralNetworks2023,
+  title = {Pseudo-{{Hamiltonian Neural Networks}} with {{State-Dependent External Forces}}},
+  author = {Eidnes, S{\o}lve and Stasik, Alexander J. and Sterud, Camilla and B{\o}hn, Eivind and {Riemer-S{\o}rensen}, Signe},
+  year = {2023},
+  month = jan,
+  number = {arXiv:2206.02660},
+  eprint = {2206.02660},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2206.02660},
+  urldate = {2024-12-06},
+  abstract = {Hybrid machine learning based on Hamiltonian formulations has recently been successfully demonstrated for simple mechanical systems, both energy conserving and not energy conserving. We introduce a pseudo-Hamiltonian formulation that is a generalization of the Hamiltonian formulation via the port-Hamiltonian formulation, and show that pseudo-Hamiltonian neural network models can be used to learn external forces acting on a system. We argue that this property is particularly useful when the external forces are state dependent, in which case it is the pseudo-Hamiltonian structure that facilitates the separation of internal and external forces. Numerical results are provided for a forced and damped mass-spring system and a tank system of higher complexity, and a symmetric fourth-order integration scheme is introduced for improved training on sparse and noisy data.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Numerical Analysis,Mathematics - Numerical Analysis}
+}
+
+@inproceedings{greydanusHamiltonianNeuralNetworks2019a,
+  title = {Hamiltonian {{Neural Networks}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}}},
+  author = {Greydanus, Samuel and Dzamba, Misko and Yosinski, Jason},
+  year = {2019},
+  volume = {32},
+  publisher = {Curran Associates, Inc.},
+  urldate = {2024-12-10},
+  abstract = {Even though neural networks enjoy widespread use, they still struggle to learn the basic laws of physics. How might we endow them with better inductive biases? In this paper, we draw inspiration from Hamiltonian mechanics to train models that learn and respect exact conservation laws in an unsupervised manner. We evaluate our models on problems where conservation of energy is important, including the two-body problem and pixel observations of a pendulum. Our model trains faster and generalizes better than a regular neural network. An interesting side effect is that our model is perfectly reversible in time.},
+  file = {C:\Users\th831789\Zotero\storage\B7Z9XIJW\Greydanus et al. - 2019 - Hamiltonian Neural Networks.pdf}
+}
+
+@article{holmsenPseudoHamiltonianSystemIdentification2024,
+  title = {Pseudo-{{Hamiltonian}} System Identification},
+  author = {Holmsen, Sigurd and Eidnes, S{\o}lve and {Riemer-S{\o}rensen}, Signe},
+  year = {Mon Jan 01 05:00:00 UTC 2024},
+  journal = {Journal of Computational Dynamics},
+  volume = {11},
+  number = {1},
+  pages = {59--91},
+  issn = {2158-2491},
+  doi = {10.3934/jcd.2024001},
+  urldate = {2024-12-06},
+  abstract = {Identifying the underlying dynamics of physical systems can be challenging when only provided with observational data. In this work, we consider systems that can be modelled as first-order ordinary differential equations. By assuming a certain pseudo-Hamiltonian formulation, we are able to learn the analytic terms of internal dynamics even if the model is trained on data where the system is affected by unknown damping and external disturbances. In cases where it is difficult to find analytic terms for the disturbances, a hybrid model that uses a neural network to learn these can still accurately identify the dynamics of the system as if under ideal conditions. This makes the models applicable in some situations where other system identification models fail. Furthermore, we propose to use a fourth-order symmetric integration scheme in the loss function and avoid actual integration in the training, and demonstrate on varied examples how this leads to increased performance on noisy data.},
+  copyright = {http://creativecommons.org/licenses/by/3.0/},
+  langid = {english}
+}
+
+@misc{karsaiNonlinearPortHamiltonianSystems2024,
+  title = {Nonlinear Port-{{Hamiltonian}} Systems and Their Connection to Passivity},
+  author = {Karsai, Attila and Breiten, Tobias and Ramme, Justus and Schulze, Philipp},
+  year = {2024},
+  month = sep,
+  number = {arXiv:2409.06256},
+  eprint = {2409.06256},
+  primaryclass = {math},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2409.06256},
+  urldate = {2024-12-05},
+  abstract = {Port-Hamiltonian (pH) systems provide a powerful tool for modeling physical systems. Their energy-based perspective allows for the coupling of various subsystems through energy exchange. Another important class of systems, passive systems, are characterized by their inability to generate energy internally. In this paper, we explore first steps towards understanding the equivalence between passivity and the feasibility of port-Hamiltonian realizations in nonlinear systems. Based on our findings, we present a method to construct port-Hamiltonian representations of a passive system if the dynamics and the Hamiltonian are known.},
+  archiveprefix = {arXiv},
+  keywords = {Mathematics - Dynamical Systems}
+}
+
+@article{liPyGpPHsPythonPackage2024,
+  title = {{{PyGpPHs}}: {{A Python Package}} for {{Bayesian Modeling}} of {{Port-Hamiltonian Systems}}⁎},
+  shorttitle = {{{PyGpPHs}}},
+  author = {Li, Peilun and Tan, Kaiyuan and Beckers, Thomas},
+  year = {2024},
+  month = jan,
+  journal = {IFAC-PapersOnLine},
+  series = {8th {{IFAC Workshop}} on {{Lagrangian}} and {{Hamiltonian Methods}} for {{Nonlinear Control LHMNC}} 2024},
+  volume = {58},
+  number = {6},
+  pages = {54--59},
+  issn = {2405-8963},
+  doi = {10.1016/j.ifacol.2024.08.256},
+  urldate = {2024-12-09},
+  abstract = {PyGpPHs is a Python toolbox for physics-informed learning of physical systems. Compared to pure data-driven approaches, it relies on solid physics priors based on the Gaussian process port-Hamiltonian systems (GP-PHS) framework. This foundation guarantees that the learning procedure adheres to the fundamental physical laws governing real-world systems. Utilizing the Bayesian learning method, PyGpPHs enables physics-informed predictions with uncertainty quantification, which are based on the posterior distribution over Hamiltonians. The PyGpPHs toolbox is designed to make Bayesian learning with physics prior accessible to the learning and control community. PyGpPHs can be installed through an open-source link 1.},
+  keywords = {Gaussian processes,physics-informed learning,port-Hamiltonian systems},
+  file = {C:\Users\th831789\Zotero\storage\K6KRQCES\S2405896324009984.html}
+}
+
+@article{moraExponentialDecayRate2024,
+  title = {Exponential {{Decay Rate}} of {{Linear Port-Hamiltonian Systems}}: {{A Multiplier Approach}}},
+  shorttitle = {Exponential {{Decay Rate}} of {{Linear Port-Hamiltonian Systems}}},
+  author = {Mora, Luis A. and Morris, Kirsten},
+  year = {2024},
+  month = mar,
+  journal = {IEEE Transactions on Automatic Control},
+  volume = {69},
+  number = {3},
+  pages = {1767--1772},
+  issn = {1558-2523},
+  doi = {10.1109/TAC.2023.3332008},
+  urldate = {2024-12-10},
+  abstract = {In this work, the multiplier method is extended to obtain a general lower bound on the exponential decay rate for port-Hamiltonian systems in one space dimension with boundary dissipation. The physical parameters of the system may be spatially varying. It is shown that, under assumptions of boundary or internal dissipation, the system is exponentially stable. This is established through a Lyapunov function defined through a general multiplier function. Furthermore, an explicit bound on the decay rate in terms of the physical parameters is obtained. The method is applied to a number of examples.},
+  keywords = {Boundary dissipation,Control theory,decay rate,distributed parameter systems (DPS),exponential stability,infinite-dimensional system,partial differential equations,port-Hamiltonian systems (PHS),Propagation,Scattering parameters,Stability criteria,Standards,Symmetric matrices,System performance},
+  file = {C\:\\Users\\th831789\\Zotero\\storage\\GJXPL3L8\\Mora and Morris - 2024 - Exponential Decay Rate of Linear Port-Hamiltonian Systems A Multiplier Approach.pdf;C\:\\Users\\th831789\\Zotero\\storage\\JXNLDAI6\\10314748.html}
+}
+
+@article{nageshraoPortHamiltonianSystemsAdaptive2016,
+  title = {Port-{{Hamiltonian Systems}} in {{Adaptive}} and {{Learning Control}}: {{A Survey}}},
+  shorttitle = {Port-{{Hamiltonian Systems}} in {{Adaptive}} and {{Learning Control}}},
+  author = {Nageshrao, Subramanya P. and Lopes, Gabriel A. D. and Jeltsema, Dimitri and Babu{\v s}ka, Robert},
+  year = {2016},
+  month = may,
+  journal = {IEEE Transactions on Automatic Control},
+  volume = {61},
+  number = {5},
+  pages = {1223--1238},
+  issn = {1558-2523},
+  doi = {10.1109/TAC.2015.2458491},
+  urldate = {2024-12-10},
+  abstract = {Port-Hamiltonian (PH) theory is a novel, but well established modeling framework for nonlinear physical systems. Due to the emphasis on the physical structure and modular framework, PH modeling has become a prime focus in system theory. This has led to a considerable research interest in the control of PH systems, resulting in numerous nonlinear control techniques. General nonlinear control methodologies are classified in a spectrum from model-based to model-free, where adaptation and learning typically lie close to the end of the range. Various articles and monographs have provided a detailed overview of model-based control techniques on PH models, but no survey is specifically dedicated to the learning and adaptive control methods that can benefit from the PH structure. To this end, we provide a comprehensive review of the current learning and adaptive control methodologies that have been adapted specifically to PH systems. After establishing the required theoretical background, we elaborate on various general machine learning, iterative learning, and adaptive control techniques and their application to PH systems. For each method we highlight the changes from the general setting due to PH model, followed by a detailed presentation of the respective control algorithm. In general, the advantages of using PH models in learning and adaptive controllers are: i) Prior knowledge in the form of PH model speeds up the learning. ii) In some instances new stability or convergence guarantees are obtained by having a PH model. iii) The resulting control laws can be interpreted in the context of physical systems. We conclude the paper with notes on open research issues.},
+  keywords = {Adaptation models,Adaptive control,Control systems,Damping,Iterative methods,Mathematical model,Passivity-based control (PBC),Port-Hamiltonian (PH),reinforcement learning (RL),Standards},
+  file = {C:\Users\th831789\Zotero\storage\X5PUV3T8\Nageshrao et al. - 2016 - Port-Hamiltonian Systems in Adaptive and Learning Control A Survey.pdf}
+}
+
+@inproceedings{nearyCompositionalLearningDynamical2023a,
+  title = {Compositional {{Learning}} of {{Dynamical System Models Using Port-Hamiltonian Neural Networks}}},
+  booktitle = {Proceedings of {{The}} 5th {{Annual Learning}} for {{Dynamics}} and {{Control Conference}}},
+  author = {Neary, Cyrus and Topcu, Ufuk},
+  year = {2023},
+  month = jun,
+  pages = {679--691},
+  publisher = {PMLR},
+  issn = {2640-3498},
+  urldate = {2024-12-05},
+  abstract = {Many dynamical systems---from robots interacting with their surroundings to large-scale multi-physics systems---involve a number of interacting subsystems. Toward the objective of learning composite models of such systems from data, we present i) a framework for compositional neural networks, ii) algorithms to train these models, iii) a method to compose the learned models, iv) theoretical results that bound the error of the resulting composite models, and v) a method to learn the composition itself, when it is not known a priori. The end result is a modular approach to learning: neural network submodels are trained on trajectory data generated by relatively simple subsystems, and the dynamics of more complex composite systems are then predicted without requiring additional data generated by the composite systems themselves. We achieve this compositionality by representing the system of interest, as well as each of its subsystems, as a port-Hamiltonian neural network (PHNN)---a class of neural ordinary differential equations that uses the port-Hamiltonian systems formulation as inductive bias. We compose collections of PHNNs by using the system's physics-informed interconnection structure, which may be known a priori, or may itself be learned from data. We demonstrate the novel capabilities of the proposed framework through numerical examples involving interacting spring-mass-damper systems. Models of these systems, which include nonlinear energy dissipation and control inputs, are learned independently. Accurate compositions are learned using an amount of training data that is negligible in comparison with that required to train a new model from scratch. Finally, we observe that the composite PHNNs enjoy properties of port-Hamiltonian systems, such as cyclo-passivity---a property that is useful for control purposes.},
+  langid = {english}
+}
+
+@misc{otterdijkLearningSubsystemDynamics2024,
+  title = {Learning {{Subsystem Dynamics}} in {{Nonlinear Systems}} via {{Port-Hamiltonian Neural Networks}}},
+  author = {van Otterdijk, G. J. E. and Moradi, S. and Weiland, S. and T{\'o}th, R. and Jaensson, N. O. and Schoukens, M.},
+  year = {2024},
+  month = nov,
+  number = {arXiv:2411.05730},
+  eprint = {2411.05730},
+  primaryclass = {eess},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2411.05730},
+  urldate = {2024-12-05},
+  abstract = {Port-Hamiltonian neural networks (pHNNs) are emerging as a powerful modeling tool that integrates physical laws with deep learning techniques. While most research has focused on modeling the entire dynamics of interconnected systems, the potential for identifying and modeling individual subsystems while operating as part of a larger system has been overlooked. This study addresses this gap by introducing a novel method for using pHNNs to identify such subsystems based solely on input-output measurements. By utilizing the inherent compositional property of the port-Hamiltonian systems, we developed an algorithm that learns the dynamics of individual subsystems, without requiring direct access to their internal states. On top of that, by choosing an output error (OE) model structure, we have been able to handle measurement noise effectively. The effectiveness of the proposed approach is demonstrated through tests on interconnected systems, including multi-physics scenarios, demonstrating its potential for identifying subsystem dynamics and facilitating their integration into new interconnected models.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Systems and Control,Electrical Engineering and Systems Science - Systems and Control}
+}
+
+@misc{PortHamiltonianSystemsTheorya,
+  title = {Port-{{Hamiltonian Systems Theory}}: {{An Introductory Overview}}},
+  shorttitle = {Port-{{Hamiltonian Systems Theory}}},
+  urldate = {2024-12-05},
+  abstract = {Apart from offering a systematic and insightful framework for modeling and analysis of multi-physics systems, port-Hamiltonian systems theory provides a natural starting point for control. Especially in the nonlinear case it is widely recognized that physical properties of the system - such as balance and conservation laws and energy considerations - should be exploited and respected in the design of control laws which are robust and physically interpretable. Port-Hamiltonian Systems Theory: An Introductory Overview provides a concise and easily accessible description of the foundations underpinning the subject, and goes on to emphasize novel developments in the field that will be of interest to a broad range of researchers. The tutorial style makes it suitable for use in a course and by students.},
+  howpublished = {https://ieeexplore.ieee.org/document/8187102},
+  langid = {american}
+}
+
+@article{rashadTwentyYearsDistributed2020,
+  title = {Twenty Years of Distributed Port-{{Hamiltonian}} Systems: A Literature Review},
+  shorttitle = {Twenty Years of Distributed Port-{{Hamiltonian}} Systems},
+  author = {Rashad, Ramy and Califano, Federico and {van der Schaft}, Arjan J and Stramigioli, Stefano},
+  year = {2020},
+  month = dec,
+  journal = {IMA Journal of Mathematical Control and Information},
+  volume = {37},
+  number = {4},
+  pages = {1400--1422},
+  issn = {1471-6887},
+  doi = {10.1093/imamci/dnaa018},
+  urldate = {2024-12-10},
+  abstract = {The port-Hamiltonian (pH) theory for distributed parameter systems has developed greatly in the past two decades. The theory has been successfully extended from finite-dimensional to infinite-dimensional systems through a lot of research efforts. This article collects the different research studies carried out for distributed pH systems. We classify over a hundred and fifty studies based on different research focuses ranging from modeling, discretization, control and theoretical foundations. This literature review highlights the wide applicability of the pH systems theory to complex systems with multi-physical domains using the same tools and language. We also supplement this article with a bibliographical database including all papers reviewed in this paper classified in their respective groups.},
+  file = {C:\Users\th831789\Zotero\storage\ZCTD67U9\Rashad et al. - 2020 - Twenty years of distributed port-Hamiltonian systems a literature review.pdf}
+}
+
+@article{rathSymplecticGaussianProcess2021,
+  title = {Symplectic {{Gaussian}} Process Regression of Maps in {{Hamiltonian}} Systems},
+  author = {Rath, Katharina and Albert, Christopher G. and Bischl, Bernd and {von Toussaint}, Udo},
+  year = {2021},
+  month = may,
+  journal = {Chaos: An Interdisciplinary Journal of Nonlinear Science},
+  volume = {31},
+  number = {5},
+  pages = {053121},
+  issn = {1054-1500},
+  doi = {10.1063/5.0048129},
+  urldate = {2024-12-10},
+  abstract = {We present an approach to construct structure-preserving emulators for Hamiltonian flow maps and Poincar{\'e} maps based directly on orbit data. Intended applications are in moderate-dimensional systems, in particular, long-term tracing of fast charged particles in accelerators and magnetic plasma confinement configurations. The method is based on multi-output Gaussian process (GP) regression on scattered training data. To obtain long-term stability, the symplectic property is enforced via the choice of the matrix-valued covariance function. Based on earlier work on spline interpolation, we observe derivatives of the generating function of a canonical transformation. A product kernel produces an accurate implicit method, whereas a sum kernel results in a fast explicit method from this approach. Both are related to symplectic Euler methods in terms of numerical integration but fulfill a complementary purpose. The developed methods are first tested on the pendulum and the H{\'e}non--Heiles system and results compared to spectral regression of the flow map with orthogonal polynomials. Chaotic behavior is studied on the standard map. Finally, the application to magnetic field line tracing in a perturbed tokamak configuration is demonstrated. As an additional feature, in the limit of small mapping times, the Hamiltonian function can be identified with a part of the generating function and thereby learned from observed time-series data of the system's evolution. For implicit GP methods, we demonstrate regression performance comparable to spectral bases and artificial neural networks for symplectic flow maps, applicability to Poincar{\'e} maps, and correct representation of chaotic diffusion as well as a substantial increase in performance for learning the Hamiltonian function compared to existing approaches.},
+  file = {C\:\\Users\\th831789\\Zotero\\storage\\33KF62YS\\Rath et al. - 2021 - Symplectic Gaussian process regression of maps in Hamiltonian systems.pdf;C\:\\Users\\th831789\\Zotero\\storage\\38WNTWBF\\1077494.html}
+}
+
+@misc{rettbergDatadrivenIdentificationLatent2024,
+  title = {Data-Driven Identification of Latent Port-{{Hamiltonian}} Systems},
+  author = {Rettberg, Johannes and Kneifl, Jonas and Herb, Julius and Buchfink, Patrick and Fehr, J{\"o}rg and Haasdonk, Bernard},
+  year = {2024},
+  month = aug,
+  number = {arXiv:2408.08185},
+  eprint = {2408.08185},
+  primaryclass = {math},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2408.08185},
+  urldate = {2024-12-05},
+  abstract = {Conventional physics-based modeling techniques involve high effort, e.g., time and expert knowledge, while data-driven methods often lack interpretability, structure, and sometimes reliability. To mitigate this, we present a data-driven system identification framework that derives models in the port-Hamiltonian (pH) formulation. This formulation is suitable for multi-physical systems while guaranteeing the useful system theoretical properties of passivity and stability. Our framework combines linear and nonlinear reduction with structured, physics-motivated system identification. In this process, high-dimensional state data obtained from possibly nonlinear systems serves as input for an autoencoder, which then performs two tasks: (i) nonlinearly transforming and (ii) reducing this data onto a low-dimensional latent space. In this space, a linear pH system, that satisfies the pH properties per construction, is parameterized by the weights of a neural network. The mathematical requirements are met by defining the pH matrices through Cholesky factorizations. The neural networks that define the coordinate transformation and the pH system are identified in a joint optimization process to match the dynamics observed in the data while defining a linear pH system in the latent space. The learned, low-dimensional pH system can describe even nonlinear systems and is rapidly computable due to its small size. The method is exemplified by a parametric mass-spring-damper and a nonlinear pendulum example, as well as the high-dimensional model of a disc brake with linear thermoelastic behavior.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Mathematics - Dynamical Systems}
+}
+
+@article{schwerdtnerOptimizationbasedModelOrder2023,
+  title = {Optimization-Based Model Order Reduction of Port-{{Hamiltonian}} Descriptor Systems},
+  author = {Schwerdtner, Paul and Moser, Tim and Mehrmann, Volker and Voigt, Matthias},
+  year = {2023},
+  month = dec,
+  journal = {Systems \& Control Letters},
+  volume = {182},
+  pages = {105655},
+  issn = {0167-6911},
+  doi = {10.1016/j.sysconle.2023.105655},
+  urldate = {2024-12-10},
+  abstract = {We present a new optimization-based structure-preserving model order reduction (MOR) method for port-Hamiltonian differential--algebraic equations (pH-DAEs). Our method is based on a novel parameterization that allows us to represent any linear time-invariant pH-DAE of a prescribed model order. We propose two algorithms which directly optimize the parameters of a reduced model to approximate a given large-scale model with respect to either the H{$\infty$} or the H2 norm. This approach has several benefits. Our parameterization ensures that the reduced model is again a pH-DAE system and enables a compact representation of the algebraic part of the large-scale model, which in projection-based methods often requires a more involved treatment. The direct optimization is entirely based on transfer function evaluations of the large-scale model and is therefore independent of the structure of the system matrices. Numerical experiments are conducted to illustrate the high accuracy and small reduced model orders in comparison to other structure-preserving MOR methods.},
+  keywords = {Descriptor systems,Model order reduction,Port-Hamiltonian systems,Structure-preservation}
+}
+
+@misc{tanPhysicsConstrainedLearningPDE2024,
+  title = {Physics-{{Constrained Learning}} for {{PDE Systems}} with {{Uncertainty Quantified Port-Hamiltonian Models}}},
+  author = {Tan, Kaiyuan and Li, Peilun and Beckers, Thomas},
+  year = {2024},
+  month = jun,
+  number = {arXiv:2406.11809},
+  eprint = {2406.11809},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2406.11809},
+  urldate = {2024-12-09},
+  abstract = {Modeling the dynamics of flexible objects has become an emerging topic in the community as these objects become more present in many applications, e.g., soft robotics. Due to the properties of flexible materials, the movements of soft objects are often highly nonlinear and, thus, complex to predict. Data-driven approaches seem promising for modeling those complex dynamics but often neglect basic physical principles, which consequently makes them untrustworthy and limits generalization. To address this problem, we propose a physics-constrained learning method that combines powerful learning tools and reliable physical models. Our method leverages the data collected from observations by sending them into a Gaussian process that is physically constrained by a distributed Port-Hamiltonian model. Based on the Bayesian nature of the Gaussian process, we not only learn the dynamics of the system, but also enable uncertainty quantification. Furthermore, the proposed approach preserves the compositional nature of Port-Hamiltonian systems.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Machine Learning,Computer Science - Robotics,Computer Science - Systems and Control,Electrical Engineering and Systems Science - Systems and Control},
+  file = {C:\Users\th831789\Zotero\storage\MCUAYBG4\2406.html}
+}
+
+@incollection{vanderschaftPortHamiltonianSystemsIntroductory2007,
+  title = {Port-{{Hamiltonian}} Systems: An Introductory Survey},
+  shorttitle = {Port-{{Hamiltonian}} Systems},
+  author = {Van Der Schaft, Arjan},
+  year = {2007},
+  month = may,
+  pages = {1339--1365},
+  doi = {10.4171/022-3/65},
+  urldate = {2024-11-29},
+  abstract = {The theory of port-Hamiltonian systems provides a framework for the geometric description of network models of physical systems. It turns out that port-based network models of physical systems immediately lend themselves to a Hamiltonian description. While the usual geometric approach to Hamiltonian systems is based on the canonical symplectic structure of the phase space or on a Poisson structure that is obtained by (symmetry) reduction of the phase space, in the case of a port-Hamiltonian system the geometric structure derives from the interconnection of its sub-systems. This motivates to consider Dirac structures instead of Poisson structures, since this notion enables one to define Hamiltonian systems with algebraic constraints. As a result, any power-conserving interconnection of port-Hamiltonian systems again defines a port-Hamiltonian system.},
+  langid = {english},
+  file = {C:\Users\th831789\Zotero\storage\LDCZ3I7E\Van Der Schaft - 2007 - Port-Hamiltonian systems an introductory survey.pdf}
+}
+
+@article{wuReducedOrderLQG2021,
+  title = {Reduced {{Order LQG Control Design}} for {{Infinite Dimensional Port Hamiltonian Systems}}},
+  author = {Wu, Yongxin and Hamroun, Boussad and Le Gorrec, Yann and Maschke, Bernhard},
+  year = {2021},
+  month = feb,
+  journal = {IEEE Transactions on Automatic Control},
+  volume = {66},
+  number = {2},
+  pages = {865--871},
+  issn = {1558-2523},
+  doi = {10.1109/TAC.2020.2997373},
+  urldate = {2024-12-10},
+  abstract = {This article proposes a method that combines linear quadratic Gaussian (LQG) control design and structure preserving model reduction for the reduced order control of infinite dimensional port Hamiltonian systems (IDPHS).For that purpose the weighting operators used in LQG control design are chosen such that the resulting dynamic controller is passive and the closed-loop system equivalent to control by interconnection. The method of Petrov-Galerkin is then used to approximate the balanced realization of the IDPHS by a finite dimensional port Hamiltonian system and to provide the associated reduced order LQG controller. The main advantages of the proposed method are that, first, both control and reduction are driven by closed-loop performances and that, second, due to the passivity properties of the controller the closed-loop stability is guaranteed when the finite dimensional controller is applied to the infinite dimensional system.},
+  keywords = {Closed loop systems,Contracts,Control design,Controller reduction,Decentralized control,infinite dimensional systems,linear quadratic Gaussian (LQG) method,model reduction,port Hamiltonian systems (PHS),Reduced order systems,Stability criteria},
+  file = {C:\Users\th831789\Zotero\storage\VZQET7FE\Wu et al. - 2021 - Reduced Order LQG Control Design for Infinite Dimensional Port Hamiltonian Systems.pdf}
+}

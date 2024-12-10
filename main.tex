@@ -1,0 +1,116 @@
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins   
+
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Assumption}{Assumption}
+\newtheorem{Definition}{Definition}
+\newtheorem{Corollary}{Corollary}
+\newtheorem{Remark}{Remark}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{balance}
+\usepackage{hyperref}
+\usepackage{authblk}
+
+
+\input{deflatex}
+
+
+% \setlength{\abovedisplayskip}{1pt}
+% \setlength{\belowdisplayskip}{1pt}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{assumption}[theorem]{Assumption}
+
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\logdet}{log\,det}
+
+\makeatletter
+\newcommand{\linebreakand}{%
+\end{@IEEEauthorhalign}
+\hfill\mbox{}\par
+\mbox{}\hfill\begin{@IEEEauthorhalign}
+}
+\makeatother
+
+%\title{\LARGE \bf Mapping spatio-temporal fields with informative path planning by multiple mobile robots }
+\title{\LARGE \bf Port-Hamiltonian}
+
+\author{Binh Nguyen$^{1}$, Truong X. Nghiem$^{1}$
+\author[1]{Binh Nguyen}
+\author[2]{Truong Nghiem}
+% \affil[1]{Department of Engineering, Texas A\&M University–Corpus Christi, Corpus Christi, TX 78412, USA}
+% \affil[2]{Institute of Innovation, Science and Sustainability, Federation University Australia, Churchill, VIC 3842, Australia}
+% \affil[3]{School of Informatics, Computing, and Cyber Systems, Northern Arizona University, Flagstaff, AZ 86011, USA}
+\thanks{$^1$The  Department of Electrical and Computer Engineering, College of Engineering and Computer Science, University of Central Florida, Orlando, FL 32816, USA}
+}
+\date{September 2024}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}
+
+Basic Introduction Port-Hamiltonian Systems (PHS) has been given in \cite{vanderschaftPortHamiltonianSystemsIntroductory2007}. Survey papers on learning control techniques including reinforcement learning (RL), iterative control and for PHSs 
+\cite{nageshraoPortHamiltonianSystemsAdaptive2016,rashadTwentyYearsDistributed2020,cherifiOverviewRecentMachine2020}. 
+
+Reduced-order PHs \cite{wuReducedOrderLQG2021,schwerdtnerOptimizationbasedModelOrder2023}
+
+
+Gassian Process approach for modelling PHSs
+\cite{beckersGaussianProcessPortHamiltonian2022,beckersLearningSwitchingPortHamiltonian2023} and then Bayesian Control for PHSs \cite{beckersDataDrivenBayesianControl2023a}.
+%%
+
+Appyling physics-informed neural network (PINN) with well-chosen learning biases for modelling PHSs has established foundation of port-Hamiltonian neural network (PHNN) \cite{nearyCompositionalLearningDynamical2023a,eidnesPseudoHamiltonianNeuralNetworks2023,desaiPortHamiltonianNeuralNetworks2021,duongPortHamiltonianNeuralODE2024}.
+
+Data-driven identificaiton of PHSs \cite{rettbergDatadrivenIdentificationLatent2024,otterdijkLearningSubsystemDynamics2024}
+
+\subsection{Related Works}
+
+Only input-ouput output \cite{otterdijkLearningSubsystemDynamics2024}.
+
+Composite learning \cite{nearyCompositionalLearningDynamical2023a,otterdijkLearningSubsystemDynamics2024}
+
+Noise data \cite{beckersGaussianProcessPortHamiltonian2022}.
+
+\subsection{Contribution}
+
+
+
+
+
+\bibliography{References}
+\bibliographystyle{IEEEtran}
+
+\end{document}
