@@ -58,7 +58,7 @@
 \makeatother
 
 %\title{\LARGE \bf Mapping spatio-temporal fields with informative path planning by multiple mobile robots }
-\title{\LARGE \bf Port-Hamiltonian}
+\title{\LARGE \bf Physics-Informed Active Learning for Port-Hamiltonian Systems}
 
 \author{Binh Nguyen$^{1}$, Truong X. Nghiem$^{1}$
 \author[1]{Binh Nguyen}
@@ -82,7 +82,7 @@
 
 \section{Introduction}
 
-Basic Introduction Port-Hamiltonian Systems (PHS) has been given in \cite{vanderschaftPortHamiltonianSystemsIntroductory2007}. Survey papers on learning control techniques including reinforcement learning (RL), iterative control and for PHSs 
+Basic Introduction Port-Hamiltonian Systems (PHS) has been given in \cite{schaftPortHamiltonianSystemsTheory2014}. Survey papers on learning control techniques including reinforcement learning (RL), iterative control and for PHSs 
 \cite{nageshraoPortHamiltonianSystemsAdaptive2016,rashadTwentyYearsDistributed2020,cherifiOverviewRecentMachine2020}. 
 
 Reduced-order PHs \cite{wuReducedOrderLQG2021,schwerdtnerOptimizationbasedModelOrder2023}
@@ -92,17 +92,22 @@ Gassian Process approach for modelling PHSs
 \cite{beckersGaussianProcessPortHamiltonian2022,beckersLearningSwitchingPortHamiltonian2023} and then Bayesian Control for PHSs \cite{beckersDataDrivenBayesianControl2023a}.
 %%
 
-Appyling physics-informed neural network (PINN) with well-chosen learning biases for modelling PHSs has established foundation of port-Hamiltonian neural network (PHNN) \cite{nearyCompositionalLearningDynamical2023a,eidnesPseudoHamiltonianNeuralNetworks2023,desaiPortHamiltonianNeuralNetworks2021,duongPortHamiltonianNeuralODE2024}.
+The first attemp using neural network to describe Hamiltonian systems
+\cite{greydanusHamiltonianNeuralNetworks2019a}. 
+%%
+Following the concept,
+\cite{nearyCompositionalLearningDynamical2023,eidnesPseudoHamiltonianNeuralNetworks2023,desaiPortHamiltonianNeuralNetworks2021,duongPortHamiltonianNeuralODE2024} have applied physics-informed neural network (PINN) with well-chosen learning biases for modelling PHSs has established foundation of port-Hamiltonian neural network (PHNN).
 
-Data-driven identificaiton of PHSs \cite{rettbergDatadrivenIdentificationLatent2024,otterdijkLearningSubsystemDynamics2024}
+Data-driven identificaiton of PHSs 
+\cite{rettbergDatadrivenIdentificationLatent2024,otterdijkLearningSubsystemDynamics2024}
 
 \subsection{Related Works}
 
-Only input-ouput output \cite{otterdijkLearningSubsystemDynamics2024}.
+\noindent\cite{otterdijkLearningSubsystemDynamics2024} {\bf Pros:} can work to input-output data, interconnection of port-Hamiltonian systems (composite learning or identificaiton). {\bf Cons:} No uncertatinty quantification. {\bf Framework:} PHNN + composite PHSs
 
-Composite learning \cite{nearyCompositionalLearningDynamical2023a,otterdijkLearningSubsystemDynamics2024}
+\noindent\cite{nearyCompositionalLearningDynamical2023} {\bf Pros:} can work to interconnection of port-Hamiltonian systems. {\bf Cons:} Use state variables and no uncertatinty quantification. {\bf Framework:} {\bf Framework:} PHNN + composite PHSs
 
-Noise data \cite{beckersGaussianProcessPortHamiltonian2022}.
+\noindent\cite{beckersGaussianProcessPortHamiltonian2022} {\bf Pros:} uncertatinty quantification with noised data. {\bf Cons:} Use state variables, prior GP assumption. {\bf Framework:} {\bf Framework:} GP-PHSs
 
 \subsection{Contribution}
 

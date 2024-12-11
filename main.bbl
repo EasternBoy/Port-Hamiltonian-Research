@@ -21,9 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{vanderschaftPortHamiltonianSystemsIntroductory2007}
-A.~Van Der~Schaft, ``Port-{{Hamiltonian}} systems: An introductory survey,''
-  May 2007, pp. 1339--1365.
+\bibitem{schaftPortHamiltonianSystemsTheory2014}
+A.~van~der Schaft and D.~Jeltsema, ``Port-{{Hamiltonian Systems Theory}}: {{An
+  Introductory Overview}},'' \emph{Foundations and Trends{\textregistered} in
+  Systems and Control}, vol.~1, no. 2-3, pp. 173--378, Jun. 2014.
 
 \bibitem{nageshraoPortHamiltonianSystemsAdaptive2016}
 S.~P. Nageshrao, G.~A.~D. Lopes, D.~Jeltsema, and R.~Babu{\v s}ka,
@@ -68,7 +69,13 @@ T.~Beckers, ``Data-{{Driven Bayesian Control}} of {{Port-Hamiltonian
   Systems}},'' in \emph{2023 62nd {{IEEE Conference}} on {{Decision}} and
   {{Control}} ({{CDC}})}, Dec. 2023, pp. 8708--8713.
 
-\bibitem{nearyCompositionalLearningDynamical2023a}
+\bibitem{greydanusHamiltonianNeuralNetworks2019a}
+S.~Greydanus, M.~Dzamba, and J.~Yosinski, ``Hamiltonian {{Neural Networks}},''
+  in \emph{Advances in {{Neural Information Processing Systems}}},
+  vol.~32.\hskip 1em plus 0.5em minus 0.4em\relax Curran Associates, Inc.,
+  2019.
+
+\bibitem{nearyCompositionalLearningDynamical2023}
 C.~Neary and U.~Topcu, ``Compositional {{Learning}} of {{Dynamical System
   Models Using Port-Hamiltonian Neural Networks}},'' in \emph{Proceedings of
   {{The}} 5th {{Annual Learning}} for {{Dynamics}} and {{Control
