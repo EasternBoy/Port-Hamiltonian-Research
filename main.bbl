@@ -109,4 +109,20 @@ G.~J.~E. van Otterdijk, S.~Moradi, S.~Weiland, R.~T{\'o}th, N.~O. Jaensson, and
   M.~Schoukens, ``Learning {{Subsystem Dynamics}} in {{Nonlinear Systems}} via
   {{Port-Hamiltonian Neural Networks}},'' Nov. 2024.
 
+\bibitem{altawaitanHamiltonianDynamicsLearning2024}
+A.~Altawaitan, J.~Stanley, S.~Ghosal, T.~Duong, and N.~Atanasov, ``Hamiltonian
+  {{Dynamics Learning}} from {{Point Cloud Observations}} for {{Nonholonomic
+  Mobile Robot Control}},'' in \emph{2024 {{IEEE International Conference}} on
+  {{Robotics}} and {{Automation}} ({{ICRA}})}, May 2024, pp. 16\,937--16\,944.
+
+\bibitem{vanderschaftGeneralizedPortHamiltonianDAE2018}
+A.~{van der Schaft} and B.~Maschke, ``Generalized port-{{Hamiltonian DAE}}
+  systems,'' \emph{Systems \& Control Letters}, vol. 121, pp. 31--37, Nov.
+  2018.
+
+\bibitem{vanderschaftDiracLagrangeAlgebraic2020}
+------, ``Dirac and {{Lagrange Algebraic Constraints}} in {{Nonlinear
+  Port-Hamiltonian Systems}},'' \emph{Vietnam Journal of Mathematics}, vol.~48,
+  no.~4, pp. 929--939, Dec. 2020.
+
 \end{thebibliography}

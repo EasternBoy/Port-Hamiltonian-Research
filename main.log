@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.9)  11 DEC 2024 08:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.9)  23 DEC 2024 08:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -494,24 +494,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
  (C:\Users\BinhPC\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count329
@@ -534,20 +534,52 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 78.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 77.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
  (C:\Users\BinhPC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
  (C:\Users\BinhPC\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (main.bbl
+)
+Underfull \hbox (badness 1960) in paragraph at lines 120--121
+[]\OT1/ptm/m/n/10 All above works do not con-sider con-strained port-
+ []
+
+<pH.PNG, id=39, 432.86719pt x 144.54pt>
+File: pH.PNG Graphic file (type png)
+<use pH.PNG>
+Package pdftex.def Info: pH.PNG  used on input line 127.
+(pdftex.def)             Requested size: 245.71811pt x 82.049pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--136
+[]\OT1/ptm/m/n/10 A Dirac
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
+[]
+ []
+
+
+
+
+Underfull \hbox (badness 8094) in paragraph at lines 180--183
+\OT1/ptm/m/n/10 Design $\OML/cmm/m/it/10 c$ \OT1/ptm/m/n/10 neu-ral net-work $\OML/cmm/m/it/10 NN[]\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10 x\OT1/cmr/m/n/10 )$ \OT1/ptm/m/n/10 such that with
+ []
+
+
+
+[1{C:/Users/BinhPC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+
+
+ <./pH.PNG>] (main.bbl
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 27.
  (C:\Users\BinhPC\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -572,29 +604,26 @@ Before submitting the final camera ready copy, remember to:
 
 
 
-[1{C:/Users/BinhPC/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
-
-
-] (main.aux)
+[2] (main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DA33084CE9EA04671FC4BF43D6249406;439.
+(rerunfilecheck)             Checksum: 1B549089A8330E197F623DF5B91D0579;1167.
  ) 
 Here is how much of TeX's memory you used:
- 15246 strings out of 473898
- 244803 string characters out of 5726008
- 1952960 words of memory out of 5000000
- 37871 multiletter control sequences out of 15000+600000
- 597427 words of font info for 116 fonts, out of 8000000 for 9000
+ 15327 strings out of 473898
+ 245979 string characters out of 5726008
+ 1955960 words of memory out of 5000000
+ 37921 multiletter control sequences out of 15000+600000
+ 601238 words of font info for 130 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,419b,442s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 84390 bytes).
+ 75i,18n,79p,419b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/BinhPC/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (2 pages, 220943 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
