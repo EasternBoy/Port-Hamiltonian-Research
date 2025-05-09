@@ -2,6 +2,9 @@
 \IEEEoverridecommandlockouts
 \overrideIEEEmargins   
 
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
 
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -58,7 +61,7 @@
 \makeatother
 
 %\title{\LARGE \bf Mapping spatio-temporal fields with informative path planning by multiple mobile robots }
-\title{\LARGE \bf Port-Hamiltonian}
+\title{\LARGE \bf Data-driven model of port-Hamiltonian Systems with algebraic constraints}
 
 \author{Binh Nguyen$^{1}$, Truong X. Nghiem$^{1}$
 \author[1]{Binh Nguyen}
@@ -82,7 +85,7 @@
 
 \section{Introduction}
 
-Basic Introduction Port-Hamiltonian Systems (PHS) has been given in \cite{vanderschaftPortHamiltonianSystemsIntroductory2007}. Survey papers on learning control techniques including reinforcement learning (RL), iterative control and for PHSs 
+Basic Introduction Port-Hamiltonian Systems (PHS) has been given in \cite{schaftPortHamiltonianSystemsTheory2014}. Survey papers on learning control techniques including reinforcement learning (RL), iterative control and for PHSs 
 \cite{nageshraoPortHamiltonianSystemsAdaptive2016,rashadTwentyYearsDistributed2020,cherifiOverviewRecentMachine2020}. 
 
 Reduced-order PHs \cite{wuReducedOrderLQG2021,schwerdtnerOptimizationbasedModelOrder2023}
@@ -92,23 +95,130 @@ Gassian Process approach for modelling PHSs
 \cite{beckersGaussianProcessPortHamiltonian2022,beckersLearningSwitchingPortHamiltonian2023} and then Bayesian Control for PHSs \cite{beckersDataDrivenBayesianControl2023a}.
 %%
 
-Appyling physics-informed neural network (PINN) with well-chosen learning biases for modelling PHSs has established foundation of port-Hamiltonian neural network (PHNN) \cite{nearyCompositionalLearningDynamical2023a,eidnesPseudoHamiltonianNeuralNetworks2023,desaiPortHamiltonianNeuralNetworks2021,duongPortHamiltonianNeuralODE2024}.
+The first attemp using neural network to describe Hamiltonian systems
+\cite{greydanusHamiltonianNeuralNetworks2019a}. 
+%%
+Following the concept,
+\cite{nearyCompositionalLearningDynamical2023,eidnesPseudoHamiltonianNeuralNetworks2023,desaiPortHamiltonianNeuralNetworks2021,duongPortHamiltonianNeuralODE2024} have applied physics-informed neural network (PINN) with well-chosen learning biases for modelling PHSs has established foundation of port-Hamiltonian neural network (PHNN).
 
-Data-driven identificaiton of PHSs \cite{rettbergDatadrivenIdentificationLatent2024,otterdijkLearningSubsystemDynamics2024}
+Data-driven identificaiton of PHSs 
+\cite{rettbergDatadrivenIdentificationLatent2024,otterdijkLearningSubsystemDynamics2024}
 
 \subsection{Related Works}
 
-Only input-ouput output \cite{otterdijkLearningSubsystemDynamics2024}.
+\noindent\cite{otterdijkLearningSubsystemDynamics2024} {\bf Pros:} can work to input-output data, interconnection of port-Hamiltonian systems (composite learning or identificaiton). {\bf Cons:} No uncertatinty quantification. {\bf Framework:} PHNN + composite PHSs
 
-Composite learning \cite{nearyCompositionalLearningDynamical2023a,otterdijkLearningSubsystemDynamics2024}
+\noindent\cite{nearyCompositionalLearningDynamical2023} {\bf Pros:} can work to interconnection of port-Hamiltonian systems. {\bf Cons:} Use state variables and no uncertatinty quantification. {\bf Framework:} {\bf Framework:} PHNN + composite PHSs
 
-Noise data \cite{beckersGaussianProcessPortHamiltonian2022}.
+\noindent\cite{beckersGaussianProcessPortHamiltonian2022} {\bf Pros:} uncertatinty quantification with noised data. {\bf Cons:} Use state variables, prior GP assumption. {\bf Framework:} {\bf Framework:} GP-PHSs
+
+\noindent\cite{altawaitanHamiltonianDynamicsLearning2024} focuses only on nonhomolomic systems, no constraint-preservation is given
+
+\noindent\cite{vanderschaftGeneralizedPortHamiltonianDAE2018,
+vanderschaftDiracLagrangeAlgebraic2020} Lagrangian constraints and Dirac constraints.
+
+All above works do not consider constrained port-Hamiltonian systems.
 
 \subsection{Contribution}
 
+\section{Constrained pHs}
+\subsection{Problem statement}
+\begin{figure}
+    \includegraphics[width = \linewidth]{pH.PNG}
+    \caption{Structure of Port-Hamiltonian system}
+\end{figure}
 
 
+\begin{definition}[Constant Dirac Structure \cite{schaftPortHamiltonianSystemsTheory2014}] 
+    A Dirac structure is
+    a subspace $\Dc \subset \Sc \times \Sc^\star$ such that $\Dc = \Dc^{\independent}$, where $^{\independent}$ denotes
+    the orthogonal companion with respect to the bilinear form $\langle\cdot,\cdot\rangle_+$
+\end{definition}
 
+\begin{definition}[Generalized pH DAE System \cite{vanderschaftGeneralizedPortHamiltonianDAE2018}] Consider a Dirac
+    structure $\Dc \subset \Sc \times \Sc^\star$ and a Lagrangian subspace $\Lc \subset \Sc \times \Sc^\star$.
+    This defines the generalized port-Hamiltonian DAE system (briefly,
+    gpH DAE system) $(\Dc, \Lc)$, with dynamics given by    
+    \begin{align}
+        (\dot x, e) \in \Dc, (x,e) \in \Lc
+    \end{align}
+\end{definition}
+
+By letting
+$e_S = \frac{\pa H}{\pa \xbf}$, $f_S = -\dot\xbf$,
+Consider input-state model of pHs as follows
+\begin{align}
+    \dot \xbf = (J - R)\frac{\pa H}{\pa \xbf} + G \ubf + 
+    \bbm 0 \\ A \bs\lambda \ebm \label{org_str}   
+    \\
+    A^\top \frac{\pa H}{\pa \xbf} = 0.
+    \label{org_cstr}
+\end{align}
+Where $\xbf \in \Rbb^n$, $J = J^\top$ is a skew matrix, $R = R^\top$ stands for positive.
+%%
+As a special case of input-output algebraic constraints  \cite[Chapter 8]{schaftPortHamiltonianSystemsTheory2014}.
+
+From \eqref{constraints}, $\frac{\pa H}{\pa \xbf}$ must be lie in the raw space of $A$, let us define a constraint set $\Xc$ as a set of all $\xbf$ satisfied \eqref{constraints}.
+%%
+Let us select $c$ basic vectors $\sbf_i$ of $\Xc$, and define  matrix
+$B = [s_1^\top;\dots;s_c^\top] \in \Rbb^{n\times c}$ which satisfies (\ref{BA}).
+\begin{align}
+    B A = 0.
+    \label{BA}
+\end{align}
+
+{\bf Problem 1:} For given dataset $(\xbf, \ubf)$ and assume that $A(\xbf)$ is known, estimate $H(\xbf)$ and parameters $\phi_J, \phi_R, \phi_G$ coressponding to matrices $J,R,G$ such that the structure \eqref{org_str} and constraint \eqref{org_cstr} are presevered.
+
+
+\subsection{Proposed approach}
+
+Neural ODE with specific structures.
+
+Define an approximation of Hamiltonian function
+\begin{align}
+    H(\xbf) = \sum_i^c NN_i(\xbf) \sbf_i^\top
+\end{align}
+Design $c$ neural network $NN_i(\xbf)$ such that
+with $[NN_i(\xbf)]_j s_{ij} \geq 0$ where $\sbf_i = [s_{ij}]_{1\leq j\leq c}$.
+
+\section{nonhomolomic Euler-Lagrangian Systems}
+Let us consider a mechanical system with $n$ degrees of freedom, described by $n$ measurable configuration variables $\qbf = [q_1,q_2,\dots,q_n]^\top$. Accordingly, kinetic energy of the mechanical system is given by $K(\dot\qbf) = $
+$\frac{1}{2} \dot\qbf^\top M(\qbf) \dot\qbf$ where $M(\qbf) = [M_{ij}(\qbf)] \in \Rbb^{n \times n}$ denotes the generalized mass matrix. In the light of \cite{}, we define the Lagrangian function $L(\qbf,\dot \qbf)$ in the following form
+\begin{align}
+    L(\qbf,\dot \qbf) = K(\dot\qbf) - U(\qbf)
+\end{align}
+where $U(\qbf)$ stands for potential energy of the mechanical system. This paper assume that there are nonhomolomic constraints of velocity $\dot \qbf$ as 
+\begin{align}
+    A^\top(\qbf) \dot\qbf = 0
+\end{align}
+
+Euler-Lagrange equations:
+\begin{align}
+    \frac{d}{dt}\left(\frac{\pa L}{\pa \dot\qbf}\right) - \frac{\pa L}{\pa \qbf} = A(\qbf) \bs\lambda + B(\qbf) \ubf
+\end{align}
+Defining the generalized momenta:
+\begin{align}
+    \pbf = \frac{\pa L}{\pa \dot \qbf} = M(\qbf)\dot \qbf
+    \label{constraints}
+\end{align}
+
+
+Constrained Port-Hamiltonian is given by
+\begin{align}
+    \dot\qbf &= \frac{\pa H}{\pa \pbf},
+    \\
+    \dot\pbf & = -\frac{\pa H}{\pa \qbf} + A(\qbf) \bs\lambda + B(\qbf) \ubf,
+    \\
+    0 &= A^\top(\qbf) \frac{\pa H}{\pa\pbf}(\pbf,\qbf)
+\end{align}
+with $H(\qbf,\pbf) = \frac{1}{2} \pbf^\top M^{-1}(\qbf) \pbf + U(\qbf)$.
+
+{\bf Assumption:} 
+
+{\bf Problem 2:} From data $\{\qbf^\tau\}_{\tau\geq 0}$ and $\{\dot\qbf^\tau\}_{\tau\geq 0}$ up to time $t$ ($\tau \leq t$), 
+learn parameters $\phi_M$ in matrix $M$ and provides predictions (for $\tau > t$) such that the nonhomolomic constraints \eqref{constraints} is satisfied.
+
+\section{approach}
 
 \bibliography{References}
 \bibliographystyle{IEEEtran}
